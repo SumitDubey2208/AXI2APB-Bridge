@@ -43,9 +43,6 @@ The project is structured as follows:
 -   [axi_2apb_bridge_testbench/uvm_tb/top_test_base.svh](axi_2apb_bridge_testbench/uvm_tb/top_test_base.svh):  Defines the base test class for the UVM environment.
 -   [axi_2apb_bridge_testbench/uvm_tb/top_example_vseq.svh](axi_2apb_bridge_testbench/uvm_tb/top_example_vseq.svh): An example virtual sequence to stimulate the AXI2APB bridge.
 
-## Simulation
-
-The project includes Makefiles for running simulations with QuestaSim and VCS.
 
 ### QuestaSim
 
