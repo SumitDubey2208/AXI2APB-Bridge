@@ -1,0 +1,158 @@
+# vsim -c -mvchome /home/tools/siemens/qvip/q19.4_4 top_opt "+nowarnTSCALE" -t 1ns -do "run -all; quit" "+UVM_TESTNAME=top_test_base" "+SEQ=top_example_vseq" 
+# Start time: 15:07:33 on Jul 17,2025
+# Loading /tmp/intern2@embesysnoida-ws1.cdac.in_dpi_81475/linux_gcc-5.3.0/export_tramp.so
+# //  Questa Sim
+# //  Version 2019.4_4 linux Oct  2 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.mgc_axi4(fast)
+# Loading work.mgc_apb3(fast)
+# Loading work.QUESTA_MVC(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.mvc_pkg(fast)
+# Loading work.txn_logger_pkg(fast)
+# Loading work.slave_mem_models_pkg(fast)
+# Loading work.rw_txn_pkg(fast)
+# Loading work.rw_api_seq_pkg(fast)
+# Loading work.addr_map_pkg(fast)
+# Loading work.mgc_apb3_v1_0_pkg(fast)
+# Loading work.rw_delay_db_pkg(fast)
+# Loading work.mgc_axi4_v1_0_pkg(fast)
+# Loading work.mgc_axi4_seq_pkg(fast)
+# Loading work.top_params_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.hdl_top(fast)
+# Loading work.mgc_axi4(fast)
+# Loading work.mgc_apb3(fast)
+# Loading work.top_pkg(fast)
+# Loading work.hvl_top(fast)
+# Compiling /tmp/intern2@embesysnoida-ws1.cdac.in_dpi_81475/linux_gcc-5.3.0/exportwrapper.c
+# Loading /tmp/intern2@embesysnoida-ws1.cdac.in_dpi_81475/linux_gcc-5.3.0/vsim_auto_compile.so
+# Loading /home/tools/siemens/questasim/q19.4_4/questasim/uvm-1.1d/linux/uvm_dpi.so
+# Loading /home/tools/siemens/qvip/q19.4_4/questa_mvc_core/linux_gcc-5.3.0/libaxi4_IN_SystemVerilog_MTI_full.so
+# Loading /home/tools/siemens/qvip/q19.4_4/questa_mvc_core/linux_gcc-5.3.0/libapb3_IN_SystemVerilog_MTI_full.so
+# 
+# //  Questa Verification IP
+# //  Version 2019.4_4 : (axi4) 20191218 linux 10/19/2020:11:53
+# //
+# //  Copyright 2007-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# 
+# ** Note: (vsim-50000) 
+# ----------------------------------------------------
+# MVC instances summary: MVCs 1, ends 4
+#     /hdl_top/axi4_master_0/axi4_if ( AXI4_ADDRESS_WIDTH = 32, AXI4_RDATA_WIDTH = 32, AXI4_WDATA_WIDTH = 32, AXI4_ID_WIDTH = 16, AXI4_USER_WIDTH = 10, AXI4_REGION_MAP_SIZE = 16 ) { master:1 slave:1 clock_source:1 reset_source:1 }
+# ----------------------------------------------------
+# 
+# 
+# //  Questa Verification IP
+# //  Version 2019.4_4 : (apb3) 20191218 linux 10/19/2020:11:53
+# //  
+# //  Copyright 2007-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //  
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# 
+# ** Note: (vsim-50000) 
+# ----------------------------------------------------
+# MVC instances summary: MVCs 1, ends 4
+#     /hdl_top/apb_slave_0/apb_if ( APB3_SLAVE_COUNT = 1, APB3_PADDR_BIT_WIDTH = 32, APB3_PWDATA_BIT_WIDTH = 32, APB3_PRDATA_BIT_WIDTH = 32 ) { host:1 slave:1 clk_contr:1 rst_contr:1 }
+# ----------------------------------------------------
+# 
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test top_test_base...
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(283) @ 0: uvm_test_top.env.apb_slave_0 [creating ap] trans_ap
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(359) @ 0: uvm_test_top.env.apb_slave_0 [creating analysis component] uvm_test_top.env.apb_slave_0.checker
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(283) @ 0: uvm_test_top.env.axi4_master_0 [creating ap] trans_ap
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(359) @ 0: uvm_test_top.env.axi4_master_0 [creating analysis component] uvm_test_top.env.axi4_master_0.checker
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(325) @ 0: uvm_test_top.env.apb_slave_0 [connecting analysis component] trans_ap -> uvm_test_top.env.apb_slave_0.checker
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/mvc_base/mvc_agent.svh(325) @ 0: uvm_test_top.env.axi4_master_0 [connecting analysis component] trans_ap -> uvm_test_top.env.axi4_master_0.checker
+# UVM_INFO top_test_base.svh(104) @ 0: uvm_test_top [top_test_base] Running virtual sequence 'top_example_vseq'
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/apb3/sequence_lib/persistent/apb3_slave_sequences.svh(163) @ 0: uvm_test_top.env.apb_slave_0.sequencer@@slave_seq [APB_SLAVE_SEQUENCE] APB Slave Sequence Started
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/axi4/sequence_lib/stimuli/axi4/deparam/burst/incr_wr_deparam.svh(95) @ 0: uvm_test_top.env.axi4_master_0.sequencer@@axi4_incr_wr_deparam_seq [AXI4/SEQ_LIB] starting sequence: axi4_incr_wr_deparam_seq 
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/apb3/sequence_lib/persistent/apb3_slave_sequences.svh(307) @ 11: uvm_test_top.env.apb_slave_0.sequencer@@slave_seq [apb3_transaction_memory_sequence] -----------------------------------------------------------------
+# Name                    Type                    Size  Value      
+# -----------------------------------------------------------------
+# mvc_sequence_item_base  mvc_sequence_item_base  -     @966       
+#   Transaction Type      string                  11    setup_phase
+#   rd_wr_type            integral                1     'h1        
+#   addr                  integral                32    'h0        
+#   slave_id              integral                5     'h0        
+#   wr_data               integral                32    'h3020100  
+#   strb                  integral                4     'h0        
+#   prot                  integral                3     'h0        
+# -----------------------------------------------------------------
+# 
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/axi4/sequence_lib/stimuli/axi4/deparam/burst/incr_wr_deparam.svh(106) @ 27: uvm_test_top.env.axi4_master_0.sequencer@@axi4_incr_wr_deparam_seq [AXI4/SEQ_LIB] Finishing sequence: axi4_incr_wr_deparam_seq 
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/axi4/sequence_lib/stimuli/axi4/deparam/burst/incr_rd_deparam.svh(102) @ 27: uvm_test_top.env.axi4_master_0.sequencer@@axi4_incr_rd_deparam_seq [AXI4/SEQ_LIB] Starting sequence: axi4_incr_rd_deparam_seq 
+# ** Error: (vsim-60046) MVC @ 20030 ns: /hdl_top/axi4_master_0/axi4_if read: MGC_AXI4: AXI4_TIMEOUT_WAITING_FOR_READ_RESPONSE:149 - Timed-out waiting for a read response (see AMBA AXI and ACE Protocol Specification IHI0022D section 13.10)
+# ** Error: (vsim-51313) MVC @ 20030 ns: /hdl_top/axi4_master_0/axi4_if read: Something went wrong with the axi4 protocol for sequence item read at 20030 ns, which was transmitted from a testbench component at 27 ns. It timed out at 20030 ns, waiting for item read_channel_phase to occur
+# ** Note: (vsim-51313) MVC @ 20030 ns: /hdl_top/axi4_master_0/axi4_if read: Failing causality chain:  item read, caused by  a testbench component using item activate_read_SV
+# ** Error: (vsim-51309) MVC @ 20030 ns for 29 ns: /hdl_top/axi4_master_0/axi4_if read_addr_channel_phase: The item read_addr_channel_phase (start:27 ns,end:29 ns) was received but has then subsequently gone into ERROR. Generating item read_addr_channel_phase, starting at 27 ns, is not legal axi4 protocol at 20030 ns
+# ** Note: (vsim-51309) MVC @ 20030 ns for 29 ns: /hdl_top/axi4_master_0/axi4_if read_addr_channel_phase: Failing causality chain:  item read_addr_channel_phase, caused by Sequence item read, caused by  a testbench component using item activate_read_SV
+# UVM_INFO /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/axi4/sequence_lib/stimuli/axi4/deparam/burst/incr_rd_deparam.svh(112) @ 20030: uvm_test_top.env.axi4_master_0.sequencer@@axi4_incr_rd_deparam_seq [AXI4/SEQ_LIB] Finishing sequence: axi4_incr_rd_deparam_seq 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 20030: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_WARNING /home/tools/siemens/qvip/q19.4_4/questa_mvc_src/sv/axi4/shared/axi4_agent.svh(453) @ 20030: uvm_test_top.env.axi4_master_0 [AXI4/AGENT uvm_test_top.env.axi4_master_0] 1 Uncompleted AXI Read transaction
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   17
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [APB_SLAVE_SEQUENCE]     1
+# [AXI4/AGENT uvm_test_top.env.axi4_master_0]     1
+# [AXI4/SEQ_LIB]     4
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [apb3_transaction_memory_sequence]     1
+# [connecting analysis component]     2
+# [creating analysis component]     2
+# [creating ap]     2
+# [top_test_base]     1
+# ** Note: $finish    : /home/tools/siemens/questasim/q19.4_4/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 20030 ns  Iteration: 68  Instance: /hvl_top
+# End time: 15:07:41 on Jul 17,2025, Elapsed time: 0:00:08
+# Errors: 3, Warnings: 0
